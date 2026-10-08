@@ -1,0 +1,22 @@
+//G：BOOL 类型选择条件
+//IN0：G = TRUE 时的返回值
+//IN1：G = false 时的返回值
+
+FUNCTION FC_SEL : int
+VAR_INPUT
+	G:BOOL;
+	IN1:INT;
+	IN2:INT;
+END_VAR
+VAR
+END_VAR
+
+// --- BEGIN IMPLEMENTATION ---
+
+IF G=TRUE THEN
+	FC_SEL:=IN1;
+	RETURN;
+ELSE
+	FC_SEL:=IN2;
+	RETURN;
+END_IF
